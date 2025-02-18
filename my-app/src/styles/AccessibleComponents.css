@@ -3,6 +3,7 @@ body {
     background-color: #FFFCF6;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -72,17 +73,18 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: flex-end; /* TODO: fix bug that makes the IO tables & takeaways text weird vertical placement*/
+    flex-wrap: wrap;
 }
 
 #left-col {
-    width: 45%;
+    min-width: 600px;
     /* width: 45%; */
     /* background-color: pink; */
 }
 
 #right-col {
     width: 45%;
-    /* background-color: lightgray; */
+    /* background-color: lightgray;  */
 }
 
 
