@@ -50,34 +50,12 @@ const stateDiagramImages = [
   },
 ];
 
-export function AccessibilityResponse1() {
-  return (
-    <p>
-    when exploring the accessibility of drop down menus across popular websites including Nike, Qualtrics, and Google Forms, I noticed: <br/>
-    non-standardized user interaction across drop-down menus 
-    e.g. some sites activate the dropdown on hover while others do only on click 
-    differing levels of efficiency vs usability 
-    e.g. Google Forms allows for filtering by keyword but Nike does not
-    the most accessible allowed for a diversity of ways to accomplish a task
-    for example, being able to activate a dropdown menu by hovering over it OR clicking on it OR  being able to navigate with keyboard via focus 
-    </p>
-  )
-}
-
-export function InputsOutputsTable() {
-  return (
-    <p>
-      INSERT INPUTS / OUTPUTS TABLE HERE
-    </p>
-  )
-}
-
 export function AccessibilityResponse2() {
   return (
     <p>
-    One example of in-accessibility for dropdown menu outputs is that without a filtering option, people who use screen readers may have to wait a long time to get to the dropdown option they are looking for. This decrease in efficiency directly impacts usability and access.<br/><br/>
+    {/* One example of in-accessibility for dropdown menu outputs is that without a filtering option, people who use screen readers may have to wait a long time to get to the dropdown option they are looking for. This decrease in efficiency directly impacts usability and access.<br/><br/>
     
-    Another example of in-accessibility are site-specific differences around interaction norms. This is particularly impactful for people who use screen readers because without clear visual cues to communicate user-interaction modalities, users experience decreased learnability, intuition, and confidence when navigating digital content. <br/><br/>
+    Another example of in-accessibility are site-specific differences around interaction norms. This is particularly impactful for people who use screen readers because without clear visual cues to communicate user-interaction modalities, users experience decreased learnability, intuition, and confidence when navigating digital content. <br/><br/> */}
     
     These access disparities highlight how visually-able mouse-users are often prioritized in digital design, followed by visually-able keyboard users followed by people who use screenreaders. These differences in access go beyond good design to dictate the worlds people have access to (Holmes), necessitating investment and innovation for a world where everyone has access. 
     </p>
@@ -116,6 +94,7 @@ export function ExplorationSection() {
 
 export function IOTableSection() {
   return (
+  <div>
   <div class='container'>
     <div class='box' id='left-col'>
     <img className="img" src={inputTable} alt="table of input interaction options for dropdown menus at Qualtrics, Nike, Google Forms"/>
@@ -123,7 +102,7 @@ export function IOTableSection() {
     <img className="img" src={outputTable} alt="table of output interaction options for dropdown menus at Qualtrics, Nike, Google Forms"/>
     </div>
     <div class='box' id='right-col'>
-      <h2 style={{textAlign: 'left'}}>analyzing accessibility of input/output modalities</h2>
+      {/* <h2 style={{textAlign: 'left'}}>analyzing accessibility of input/output modalities</h2> */}
       <p>
         <span style={{fontWeight: 'bold'}}>Takeaways:</span> <br />
         <ul style={{ listStyleType: 'disc' }}>
@@ -144,7 +123,7 @@ export function IOTableSection() {
                     </li>
         </ul>
         
-        This is  <span style={{fontWeight: 'bold'}}> inaccessible </span> because: 
+        This is <span style={{fontWeight: 'bold'}}> inaccessible </span> because: 
         <ul>
           <li>
           site-specific differences in interaction norms creates decreased learnability, intuition, and confidence when navigating digital content 
@@ -153,12 +132,23 @@ export function IOTableSection() {
             without a filtering option, people who use screen readers have to wait a long time to find the dropdown option they are looking for. Decreased efficiency harms access and usability.
           </li>
         </ul>
-        <span style={{fontWeight: 'bold'}}>This matters because...<br/></span>
-      
-        These access disparities highlight how visually-able mouse-users are often prioritized in digital design, followed by visually-able keyboard users followed by people who use screenreaders. These differences in access go beyond good design to dictate the worlds people have access to (Holmes), necessitating investment and innovation for a world where everyone has access. 
+
+        Examples of how this creates inaccessibility:
+        <ul>
+          <li>
+            Without a filtering option, people who use screen readers may have to wait a long time to get to the dropdown option they are looking for. This decrease in efficiency directly impacts usability and access.
+          </li>
+          <li>
+            Another example of in-accessibility are site-specific Differences around interaction norms cause people who use screen readers because without clear visual cues to communicate user-interaction modalities, users experience decreased learnability, intuition, and confidence when navigating digital content. 
+          </li>
+        </ul>
       </p>
     </div>
   </div>
+  <span style={{fontWeight: 'bold'}}>This matters because...<br/></span>
+      These access disparities highlight how visually-able mouse-users are often prioritized in digital design, followed by visually-able keyboard users followed by people who use screenreaders. These differences in access go beyond good design to dictate the worlds people have access to (Holmes), necessitating investment and innovation for a world where everyone has access. 
+  </div>
+  
   )
 }
 
@@ -212,23 +202,13 @@ export default function AccessibleComponents() {
     <h2 className="left-aligned-text">exploring the dropdown accessibility landscape 🔎</h2>
     <ExplorationSection/>
 
-    <h2 className="left-aligned-text"> analyzing accessibility of popular dropdown interfaces 🤔</h2>
-    <IOTableSection />
-    {/* <ExplorationSection/> */}
-    {/* <inputOutputTables /> */}
-
-
-
     <h2 className="left-aligned-text">mapping out digital interactions through state diagrams 🗺</h2>
-    {/* <ImageGallery items={images} /> */}
     <CustomImageGallery />
 
-
-    <h4>exploring existing accessibility features for dropdown menus</h4>
-    <AccessibilityResponse1/>
+    <h2 className="left-aligned-text"> analyzing accessibility of popular dropdown interfaces 🤔</h2>
+    <IOTableSection />
 
     <h4>analyzing existing ways users can experience dropdown menus</h4>
-    <InputsOutputsTable/>
     <AccessibilityResponse2/>
     <h4>designing more accessible dropdown menus</h4>
     <h5>“Accessibility is about solving for mismatches between users and the real world” - Kat Holmes</h5>
