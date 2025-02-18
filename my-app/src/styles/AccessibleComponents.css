@@ -1,0 +1,50 @@
+body {
+    background-color: #131313;
+}
+
+h1 {
+    color: #E86249;
+    font-size: 60;
+}
+
+h2 {
+    color: #F4B1A4;
+    font-size: 36;
+}
+
+h3 {
+    color: #F4B1A4;
+    /* font-size: 30; */
+    font-size: 50;
+    font-style: italic;
+    text-align: left;
+    /* align-items: left; */
+}
+
+h4 {
+    color: #F4B1A4;
+    font-size: 24;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.main-box {
+    display: flexbox;
+    flex-direction:column;
+}
+
+.left-aligned-text {
+    text-align: left;
+}
+
+
+/* TODO: left-align images! */
+.img { /* so images don't take up the entire screen & are left aligned */
+    max-width: 80%;
+    min-width: 80%;
+    /* justify-content: flex-start;
+    align-items: flex-start;
+    align-content:flex-start;
+    align-self:first baseline; */
+    
+}
