@@ -55,6 +55,7 @@ p {
 }
 
 
+
 /* TODO: left-align images! */
 .img { /* so images don't take up the entire screen & are left aligned */
     max-width: 80%;
@@ -65,3 +66,40 @@ p {
     align-self:first baseline; */
     
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end; /* TODO: fix bug that makes the IO tables & takeaways text weird vertical placement*/
+}
+
+#left-col {
+    width: 45%;
+    /* width: 45%; */
+    /* background-color: pink; */
+}
+
+#right-col {
+    width: 45%;
+    /* background-color: lightgray; */
+}
+
+
+  /** Code for image-gallery-wrapper & m@media only screen adapted from: 
+   * https://ajeetchaulagain.com/blog/react-image-gallery
+   */
+  .image-gallery-wrapper {
+    margin-top: 5rem;
+    max-height: 20%;
+    max-width: 70%;
+    margin: 0 auto;
+    border: 1px solid rgb(146, 129, 242);
+    box-shadow: #2b15453d 1px 10px 10px 5px;
+  }
+  
+  @media only screen and (min-device-width: 375px) {
+    .header-wrapper {
+      padding: 1rem;
+    }
+  }

@@ -5,15 +5,50 @@ import NikeAfter from '../assets/NikeAfter.svg'
 import DropdownScreenshot from '../assets/DropdownScreenshots.svg'
 
 /* imports related to state diagram gallery */
-import ImageSlider from './ImageSlider'
+// import ImageSlider from './ImageSlider'
 
-
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 import keyboardBefore from '../assets/stateDiagrams/keyboard_before.svg'
 import keyboardAfter from '../assets/stateDiagrams/keyboard_after.svg'
 import mouseBefore from '../assets/stateDiagrams/mouse_before.svg'
 import mouseAfter from '../assets/stateDiagrams/mouse_after.svg'
 
+import inputTable from '../assets/IODiagrams/inputTable.svg'
+import outputTable from '../assets/IODiagrams/outputTable.svg'
+
+const stateDiagramImages = [
+  {
+    original: keyboardBefore,
+    thumbnail: keyboardBefore,
+    originalHeight: 'true',
+    originalWidth: 'true',
+    description: 'keyboard state diagram',
+  },
+  {
+    original: keyboardAfter,
+    thumbnail: keyboardAfter,
+    originalHeight: 'true',
+    originalWidth: 'true',
+    description: 'keyboard state diagram with new accessibility feature in red',
+  },
+  {
+    original: mouseBefore,
+    thumbnail: mouseBefore,
+    originalHeight: 'true',
+    originalWidth: 'true',
+    description: 'mouse state diagram',
+  },
+  {
+    original: mouseAfter,
+    thumbnail: mouseAfter,
+    originalHeight: 'true',
+    originalWidth: 'true',
+    description: 'mouse state diagram with new accessibility feature in red',
+
+  },
+];
 
 export function AccessibilityResponse1() {
   return (
@@ -76,37 +111,90 @@ export function ExplorationSection() {
     </p>
     <img className="img" src={DropdownScreenshot} alt="Dropdown menus from Qualtrics, Google Forms, and Nike"/>
   </div>
-
   )
-  
 }
 
-export function testGallery() {
-
-  const images = [
-    {url: keyboardBefore, alt: 'state diagram of dropdown interaction via keyboard'},
-    {url: keyboardAfter, alt: 'state diagram of dropdown interaction via keyboard with filtering functionality'},
-    {url: mouseBefore, alt: 'state diagram of dropdown interaction via mouse'},
-    {url: mouseAfter, alt: 'state diagram of dropdown interaction via mouse with click to display functionality'}
-  ]
-
+export function IOTableSection() {
   return (
-    <div
-    style={{
-      maxWidth: "1200px",
-      width: "100%",
-      aspectRatio: "10 / 6",
-      margin: "0 auto",
-    }}
-  >
-    <ImageSlider images={images} />
-    <a href="/" style={{ fontSize: "4rem" }}>
-      Link
-    </a>
+  <div class='container'>
+    <div class='box' id='left-col'>
+    <img className="img" src={inputTable} alt="table of input interaction options for dropdown menus at Qualtrics, Nike, Google Forms"/>
+    <div style={{margin:'15px'}}></div>
+    <img className="img" src={outputTable} alt="table of output interaction options for dropdown menus at Qualtrics, Nike, Google Forms"/>
+    </div>
+    <div class='box' id='right-col'>
+      <h2 style={{textAlign: 'left'}}>analyzing accessibility of input/output modalities</h2>
+      <p>
+        <span style={{fontWeight: 'bold'}}>Takeaways:</span> <br />
+        <ul style={{ listStyleType: 'disc' }}>
+                    <li>non-standardized user interaction across drop-down menus 
+                      <ul> <li>
+                          e.g. some sites activate the dropdown on hover while others do only on click
+                      </li> </ul>
+                    </li>
+                    <li>differing levels of efficiency vs usability 
+                      <ul><li> 
+                        e.g. Google Forms allows for filtering by keyword but Nike does not
+                      </li></ul>
+                    </li>
+                    <li>the most accessible allowed for a diversity of ways to accomplish a task
+                      <ul><li>
+                        e.g. being able to activate a dropdown menu by hovering over it OR clicking on it OR  being able to navigate with keyboard via focus 
+                      </li></ul>
+                    </li>
+        </ul>
+        
+        This is  <span style={{fontWeight: 'bold'}}> inaccessible </span> because: 
+        <ul>
+          <li>
+          site-specific differences in interaction norms creates decreased learnability, intuition, and confidence when navigating digital content 
+          </li>
+          <li>
+            without a filtering option, people who use screen readers have to wait a long time to find the dropdown option they are looking for. Decreased efficiency harms access and usability.
+          </li>
+        </ul>
+        <span style={{fontWeight: 'bold'}}>This matters because...<br/></span>
+      
+        These access disparities highlight how visually-able mouse-users are often prioritized in digital design, followed by visually-able keyboard users followed by people who use screenreaders. These differences in access go beyond good design to dictate the worlds people have access to (Holmes), necessitating investment and innovation for a world where everyone has access. 
+      </p>
+    </div>
   </div>
   )
+}
+
+
+export function CustomImageGallery() {
+  return (
+      <div className='image-gallery-wrapper'>
+      <ImageGallery items={stateDiagramImages} showNav={false}/>
+      </div>
+  )
 
 }
+
+// export function inputOutputTables() {
+//   return (
+//     // <div className='two-col-flexbox'>
+//     //   <div className='left-col'>
+//       <div>
+//       <img className="img" src={inputTable} alt="table of input interaction options for dropdown menus at Qualtrics, Nike, Google Forms"/>
+//       <img className="img" src={outputTable} alt="table of output interaction options for dropdown menus at Qualtrics, Nike, Google Forms"/>
+
+//       <img className="img" src={DropdownScreenshot} alt="Dropdown menus from Qualtrics, Google Forms, and Nike"/>
+
+//       </div>
+//   )
+// }
+
+/**
+ *       <div className='right-col'>
+      //   <p>
+      //     sample p text on the right
+      //   </p>
+      // </div>
+    // </div>
+ * 
+ */
 
 export default function AccessibleComponents() {
   // TODO: change the folor of filter & faster to be red 
@@ -115,7 +203,6 @@ export default function AccessibleComponents() {
     <h1>Accessible Components</h1>
     <h2>re-imagining access & exploring possibilities </h2>
 
-    {/* <h3>what if you could <span style={{color: '#E86249'}}> filter </span> by key word for  <span style={{color: '#E86249'}}> faster </span> menu navigation via keyboard? </h3> */}
 
 
     <h2 className="left-aligned-text">what if you could <span style={{color: '#E86249'}}> filter </span> by key word for  <span style={{color: '#E86249'}}> faster </span> menu navigation via keyboard? </h2>
@@ -125,7 +212,17 @@ export default function AccessibleComponents() {
     <h2 className="left-aligned-text">exploring the dropdown accessibility landscape 🔎</h2>
     <ExplorationSection/>
 
-    <h2 className="left-aligned-text"> analyzing dropdown accessibility across platforms</h2>
+    <h2 className="left-aligned-text"> analyzing accessibility of popular dropdown interfaces 🤔</h2>
+    <IOTableSection />
+    {/* <ExplorationSection/> */}
+    {/* <inputOutputTables /> */}
+
+
+
+    <h2 className="left-aligned-text">mapping out digital interactions through state diagrams 🗺</h2>
+    {/* <ImageGallery items={images} /> */}
+    <CustomImageGallery />
+
 
     <h4>exploring existing accessibility features for dropdown menus</h4>
     <AccessibilityResponse1/>
