@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/AccessibleComponents.css';
 import NikeBefore from '../assets/NikeBefore.svg'
 import NikeAfter from '../assets/NikeAfter.svg'
+import DropdownScreeshotsOffState from '../assets/DropdownScreenshotsOffState'
 import DropdownScreenshot from '../assets/DropdownScreenshots.svg'
 
 /* imports related to state diagram gallery */
@@ -100,7 +101,8 @@ export function ExplorationSection() {
     <p>
       We cannot change what we are not aware of. To explore opportunities for accessibility innovation, I first explored the strengths and weaknesses of popular dropdown menu interfaces including Qualtrics, Google Forms, and Nike.
     </p>
-    <img className="img" src={DropdownScreenshot} alt="Dropdown menus from Qualtrics, Google Forms, and Nike"/>
+    <img className="img" src={DropdownScreeshotsOffState} alt="Navbars with unopened dropdowns from Qualtrics, Google Forms, and Nike"/>
+    <img className="img" src={DropdownScreenshot} alt="Opened dropdown menus from Qualtrics, Google Forms, and Nike"/>
   </div>
   )
 }
