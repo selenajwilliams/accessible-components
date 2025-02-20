@@ -101,7 +101,9 @@ export function ExplorationSection() {
     <p>
       We cannot change what we are not aware of. To explore opportunities for accessibility innovation, I first explored the strengths and weaknesses of popular dropdown menu interfaces including Qualtrics, Google Forms, and Nike.
     </p>
+    <h3>popular websites with Unopened Dropdowns</h3>
     <img className="img" src={DropdownScreeshotsOffState} alt="Navbars with unopened dropdowns from Qualtrics, Google Forms, and Nike"/>
+    <h3>popular websites with opened dropdowns</h3>
     <img className="img" src={DropdownScreenshot} alt="Opened dropdown menus from Qualtrics, Google Forms, and Nike"/>
   </div>
   )
