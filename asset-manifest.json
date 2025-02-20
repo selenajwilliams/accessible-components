@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/accessible-components/my-app/static/css/main.21928f90.css",
-    "main.js": "/accessible-components/my-app/static/js/main.12be2872.js",
-    "static/js/453.ed3810f9.chunk.js": "/accessible-components/my-app/static/js/453.ed3810f9.chunk.js",
-    "static/media/DropdownScreenshots.svg": "/accessible-components/my-app/static/media/DropdownScreenshots.e1341bf4ea7f1cdfd9578d0cd49d69d9.svg",
-    "static/media/NikeAfter.svg": "/accessible-components/my-app/static/media/NikeAfter.df934d011d1f72d5e0351fd9aca4796e.svg",
-    "static/media/NikeBefore.svg": "/accessible-components/my-app/static/media/NikeBefore.2fa39fc592c56c926a4aa9edba8f31f6.svg",
-    "static/media/keyboard_after.svg": "/accessible-components/my-app/static/media/keyboard_after.91be78349c827b3d5562024ef9e8a7f2.svg",
-    "static/media/inputTable.svg": "/accessible-components/my-app/static/media/inputTable.2b8080a7115255f4d1cac776c780fb84.svg",
-    "static/media/keyboard_before.svg": "/accessible-components/my-app/static/media/keyboard_before.8ec78ecc42147f6b36e3a46f247e64a6.svg",
-    "static/media/mouse_before.svg": "/accessible-components/my-app/static/media/mouse_before.19981b76f4ab2b7f72d147fea78a6ada.svg",
-    "static/media/outputTable.svg": "/accessible-components/my-app/static/media/outputTable.2066f06e8a60318a1e36a10f6350be4a.svg",
-    "static/media/mouse_after.svg": "/accessible-components/my-app/static/media/mouse_after.34c4032dceb1ea8f4d04466451071ac2.svg",
-    "index.html": "/accessible-components/my-app/index.html",
-    "main.21928f90.css.map": "/accessible-components/my-app/static/css/main.21928f90.css.map",
-    "main.12be2872.js.map": "/accessible-components/my-app/static/js/main.12be2872.js.map",
-    "453.ed3810f9.chunk.js.map": "/accessible-components/my-app/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/accessible-components/static/css/main.21928f90.css",
+    "main.js": "/accessible-components/static/js/main.3053e9c4.js",
+    "static/js/453.ed3810f9.chunk.js": "/accessible-components/static/js/453.ed3810f9.chunk.js",
+    "static/media/DropdownScreenshots.svg": "/accessible-components/static/media/DropdownScreenshots.e1341bf4ea7f1cdfd9578d0cd49d69d9.svg",
+    "static/media/NikeAfter.svg": "/accessible-components/static/media/NikeAfter.df934d011d1f72d5e0351fd9aca4796e.svg",
+    "static/media/NikeBefore.svg": "/accessible-components/static/media/NikeBefore.2fa39fc592c56c926a4aa9edba8f31f6.svg",
+    "static/media/keyboard_after.svg": "/accessible-components/static/media/keyboard_after.91be78349c827b3d5562024ef9e8a7f2.svg",
+    "static/media/inputTable.svg": "/accessible-components/static/media/inputTable.2b8080a7115255f4d1cac776c780fb84.svg",
+    "static/media/keyboard_before.svg": "/accessible-components/static/media/keyboard_before.8ec78ecc42147f6b36e3a46f247e64a6.svg",
+    "static/media/mouse_before.svg": "/accessible-components/static/media/mouse_before.19981b76f4ab2b7f72d147fea78a6ada.svg",
+    "static/media/outputTable.svg": "/accessible-components/static/media/outputTable.2066f06e8a60318a1e36a10f6350be4a.svg",
+    "static/media/mouse_after.svg": "/accessible-components/static/media/mouse_after.34c4032dceb1ea8f4d04466451071ac2.svg",
+    "index.html": "/accessible-components/index.html",
+    "main.21928f90.css.map": "/accessible-components/static/css/main.21928f90.css.map",
+    "main.3053e9c4.js.map": "/accessible-components/static/js/main.3053e9c4.js.map",
+    "453.ed3810f9.chunk.js.map": "/accessible-components/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21928f90.css",
-    "static/js/main.12be2872.js"
+    "static/js/main.3053e9c4.js"
   ]
 }
